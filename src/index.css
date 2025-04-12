@@ -1,23 +1,88 @@
-html, body {
+html,
+body {
 	padding: 0;
 	margin: 0;
 	font-family: Inter, san-serif;
 }
 
+/*Header*/
 #header {
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 	align-items: center;
 	gap: 10px;
 	background-color: #f55a5a;
 	height: 90px;
 }
 
-.globe-logo{
-  width: 40px;
+.globe-logo {
+	width: 40px;
 }
 
-.logo-name{
-  font-size: 1.4rem;
-  color: white;
+.logo-name {
+	font-size: 1.4rem;
+	color: white;
+}
+
+/*Main content*/
+.entry {
+	display: flex;
+	margin-top: 60px;
+	justify-content: center;
+	align-items: center;
+}
+
+.entry--photo {
+	width: 320px;
+	height: 328px;
+	border-radius: 15px;
+}
+
+.entry-details {
+	margin: 50px;
+	max-width: 540px;
+}
+
+.entry-location {
+	display: flex;
+	gap: 20px;
+	font-size: 1.1rem;
+}
+
+.entry-location-name {
+	display: flex;
+	gap: 5px;
+}
+
+.location-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.entry-name {
+	letter-spacing: 4px;
+}
+
+.entry-map {
+	color: #918e9b;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+.entry-area {
+	color: #2b283a;
+	font-size: 2.5rem;
+	margin: 15px 0px 25px 0px;
+}
+
+.date {
+	color: #2b283a;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.entry-description {
+	color: #2b283a;
+	font-size: 1.1rem;
+	line-height: 1.8rem;
 }

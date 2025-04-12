@@ -1,8 +1,8 @@
 export default function Header() {
 	return (
-		<header>
-			<img src="src/assets/globe.svg" />
-			<span>My travel journal.</span>
+		<header id="header">
+			<img src="src/assets/globe.svg" alt="logo" className="globe-logo" />
+			<span className="logo-name">my travel journal.</span>
 		</header>
 	);
 }

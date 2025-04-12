@@ -1,0 +1,23 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Inter, san-serif;
+}
+
+#header {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background-color: #f55a5a;
+	height: 90px;
+}
+
+.globe-logo{
+  width: 40px;
+}
+
+.logo-name{
+  font-size: 1.4rem;
+  color: white;
+}

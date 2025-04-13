@@ -6,6 +6,7 @@ export default function App() {
 	const journalData = data.map((entry) => {
 		return (
 			<Entry
+				key={entry.id}
 				image={entry.img}
 				title={entry.title}
 				country={entry.country}

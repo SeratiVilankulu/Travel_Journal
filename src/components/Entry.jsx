@@ -1,12 +1,15 @@
-export default function Entry() {
+export default function Entry(entryData) {
+	console.log(entryData);
 	return (
 		<>
 			<main className="entry">
-				<img
-					src="https://scrimba.com/links/travel-journal-japan-image-url"
-					alt=" Photo of Japan"
-					className="entry--photo"
-				/>
+				<div className="entry-photo-container">
+					<img
+						src={entryData.image.src}
+						alt={entryData.image.alt}
+						className="entry-photo"
+					/>
+				</div>
 
 				<div className="entry-details">
 					<div className="entry-location">
@@ -16,19 +19,16 @@ export default function Entry() {
 								alt="Location icon"
 								className="location-icon"
 							/>
-							<span className="entry-name">JAPAN</span>
+							<span className="entry-name">{entryData.country}</span>
 						</div>
-						<span className="entry-map">View on Google Maps</span>
+						<a href={entryData.googMapsLink} className="entry-map">
+							View on Google Maps
+						</a>
 					</div>
 					<div>
-						<h1 className="entry-area">Mount Fuji</h1>
-						<p className="date">12 Jan, 2021 - 24 Jan, 2021</p>
-						<p className="entry-description">
-							{" "}
-							Mount Fuji is the tallest mountain in Japan, standing at 3,776
-							meters (12,380 feet). Mount Fuji is the single most popular
-							tourist site in Japan, for both Japanese and foreign tourists.
-						</p>
+						<h1 className="entry-area">{entryData.title}</h1>
+						<p className="date">{entryData.dates}</p>
+						<p className="entry-description">{entryData.description}</p>
 					</div>
 				</div>
 			</main>

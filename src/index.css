@@ -32,9 +32,17 @@ body {
 	align-items: center;
 }
 
-.entry--photo {
-	width: 320px;
-	height: 328px;
+.entry-photo-container {
+	width: 225px;
+	height: 320px;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.entry-photo {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	border-radius: 15px;
 }
 
@@ -61,6 +69,7 @@ body {
 
 .entry-name {
 	letter-spacing: 4px;
+	text-transform: uppercase;
 }
 
 .entry-map {

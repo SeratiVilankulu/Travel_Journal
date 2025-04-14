@@ -4,17 +4,7 @@ import data from "./data";
 
 export default function App() {
 	const journalData = data.map((entry) => {
-		return (
-			<Entry
-				key={entry.id}
-				image={entry.img}
-				title={entry.title}
-				country={entry.country}
-				googleMapsLink={entry.googleMapsLink}
-				dates={entry.dates}
-				description={entry.text}
-			/>
-		);
+		return <Entry key={entry.id} object={entry} />;
 	});
 
 	console.log(journalData);
